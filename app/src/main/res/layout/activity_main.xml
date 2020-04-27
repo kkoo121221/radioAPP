@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="@string/txt1"
+        android:textColor="#C81919"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:scrollbarSize="4sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1">
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/radio1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/radio2"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/radio3"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#536CF6"
+        android:text="@string/sent"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioG" />
+
+    <ImageView
+        android:id="@+id/bat_man"
+        android:layout_width="385dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/space"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/bat_man" />
+
+    <ImageView
+        android:id="@+id/mission_impossible"
+        android:layout_width="385dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/space"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/mission_impossible" />
+
+    <ImageView
+        android:id="@+id/avengers"
+        android:layout_width="385dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/space"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/avengers4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

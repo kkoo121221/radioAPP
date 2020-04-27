@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">20200426RadioBtn</string>
+    <string name="txt1">喜歡的電影名稱</string>
+    <string name="radio1">復仇者聯盟4：無限之戰</string>
+    <string name="radio2">不可能的任務5：失控國度</string>
+    <string name="radio3">蝙蝠俠3：黎明昇起</string>
+    <string name="sent">確認</string>
+    <string name="space"></string>
+</resources>
